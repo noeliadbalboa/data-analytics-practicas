@@ -1,7 +1,7 @@
 -- ══════════════════════════════════════════
 -- TechStore - Script de ventas
 -- Autor: Noelia Balboa
--- Fecha: 20-10-2026
+-- Fecha: 21-10-2026
 -- ══════════════════════════════════════════
 
 --Sección 1 - DROP TABLES
