@@ -16,7 +16,7 @@ CREATE TABLE categorias (
   id_categoria int PRIMARY KEY,
   nombre_categoria varchar(50) NOT NULL,
   descripcion varchar(200)
-)
+);
 
 CREATE TABLE clientes (
   id_cliente int PRIMARY KEY,
@@ -24,25 +24,25 @@ CREATE TABLE clientes (
   email varchar(100) UNIQUE,
   ciudad varchar(50),
   fecha_registro date NOT NULL
-)
+);
 
 CREATE TABLE productos (
   id_producto int PRIMARY KEY,
   nombre_producto varchar(100) NOT NULL,
-  id_categoria int FOREIGN KEY -> categorias(id_categoria),
+  id_categoria int REFERENCES categorias(id_categoria),
   precio decimal(10,2) NOT NULL,
   stock int DEFAULT 0,
   activo bit DEFAULT 1
-)
+);
 
 CREATE TABLE ventas (
   id_venta int PRIMARY KEY,
-  id_cliente int FOREIGN KEY -> clientes(id_cliente),
-  id_producto int FOREIGN KEY -> productos(id_producto),
+  id_cliente int REFERENCES clientes(id_cliente),
+  id_producto int REFERENCES productos(id_producto),
   cantidad int NOT NULL,
   precio_unitario decimal(10,2) NOT NULL,
   fecha_venta date NOT NULL
-)
+);
 
 --Sección 3 - INSERT DATA
 INSERT INTO categorias (id_categoria, nombre_categoria, descripcion) VALUES
