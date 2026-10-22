@@ -3,7 +3,7 @@
 -- Autor: Noelia Balboa
 -- Fecha: 21-10-2026
 -- ══════════════════════════════════════════
-CREATE DATABASE RetailPro;
+CREATE DATABASE TechStore;
 GO
 
 --Sección 1 - DROP TABLES
