@@ -3,6 +3,8 @@
 -- Autor: Noelia Balboa
 -- Fecha: 21-10-2026
 -- ══════════════════════════════════════════
+CREATE DATABASE RetailPro;
+GO
 
 --Sección 1 - DROP TABLES
 --Se eliminan las tablas si ya existen para no violar las foreign keys 
