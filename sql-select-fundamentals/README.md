@@ -1,12 +1,13 @@
 - ¿Por qué es mala práctica usar SELECT * en producción? Mencioná al menos dos razones concretas (rendimiento, mantenibilidad, seguridad).
 
-Usar SELECT * en producción es mala práctica, ya que no siempre se necesita la totalidad de columnas de una tabla. La herramienta SELECT se la puede hacer sacar provecho para ser específicos y trabajar la eficienciia en los reportes y en la sintaxis. Y, además, al trabajar con grandes volúmenes de datos puede llevar bajar el rendimiento con la carga de datos. 
-Por ejemplo, para la tabla sales de este módulo, si senecesita  conocer el precio unitario de cada producto, no es conveniente realizar:
+Usar SELECT * en producción es mala práctica, ya que no siempre se necesita la totalidad de columnas de una tabla. La herramienta SELECT se la puede hacer sacar provecho para ser específicos y trabajar la eficiencia en los reportes y en la sintaxis. Y, además, al trabajar con grandes volúmenes de datos puede llevar bajar el rendimiento con la carga de datos. 
+Por ejemplo, para la tabla sales de este módulo, si se necesita  conocer el precio unitario de cada producto, no es conveniente realizar:
                                   SELECT * FROM sales;
 Nos encontraremos con datos que no nos interesa conocer y perderíamos tiempo en la lectura.
 Al hacer:
                                   SELECT product_id, unit_price FROM sales;
-Damos con los datos específicos de la consulta y nos da la seguridad de los datos que queremos saber. No estaríamos perdiendo el tiempo en la lectura.
+Damos con los datos específicos de la consulta y nos da la seguridad de los datos que queremos saber. No estaríamos perdiendo el tiempo en la lectura. 
+Otra razón para no usar SELECT * es la mantenibilidad. Si la tabla camia de estructura, un SELECT * altera o rompe los reportes.
 
 - ¿Por qué son importantes los alias para un stakeholder no técnico? Explicá con un ejemplo concreto cómo un alias transforma total_amount en algo que cualquier persona del área de finanzas puede interpretar directamente.
 
