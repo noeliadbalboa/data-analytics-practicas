@@ -2,8 +2,8 @@
 --Consultas básicas SELECT y alias: extrayendo datos para el equipo de finanzas
 -- ══════════════════════════════════════════
 -- TechStore — Consultas Básicas SELECT
--- Autor: [Tu nombre]
--- Fecha: [Fecha de entrega]
+-- Autor: Noelia Denise Balboa
+-- Fecha: 25/10/2026
 -- ══════════════════════════════════════════
 --ANALISTA DE DATOS JUNIOR EN TECHSTORE
 --Se necesitan 3 reportes a partir de la tabla "sales" 
