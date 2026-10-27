@@ -1,3 +1,8 @@
+-- ══════════════════════════════════════════
+-- TechStore - Consultas SQL del negocio
+-- Autor: Noelia Balboa
+-- Fecha: 28-10-2026
+-- ══════════════════════════════════════════
 SELECT * FROM ventas;
 
 --Consulta 1 — Resumen ejecutivo mensual 
